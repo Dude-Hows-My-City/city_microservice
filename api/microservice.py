@@ -4,11 +4,43 @@ import json
 
 app = Flask(__name__)
 
+########## Endpoints ##########
+
+
 @app.route('/api/<location>')
-def index(location):
+def city(location):
     data = get_city_data(location)
     return data
 
+
+@app.route('/api/<location>/scores')
+def scores(location):
+    data = get_city_score(location)
+    return data
+
+
+
+@app.route('/api/urban_areas')
+def city_index():
+    data = get_all_urban_areas()
+    return data
+
+
+
+@app.route('/api/<location>/images')
+def city_image(location):
+    data = get_city_image_data(location)
+    return data
+
+
+
+@app.route('/api/<location>/details')
+def city_details(location):
+    data = get_city_details(location)
+    return data
+
+
+########## Service Calls ##########
 
 def get_city_data(location):
     # params = {'slug:': location}
@@ -32,7 +64,7 @@ def get_all_urban_areas():
 
 
 def get_city_image_data(location):
-    req = requests.get('https://api.teleport.org/api/urban_areas//slug:%s/images' % location)
+    req = requests.get('https://api.teleport.org/api/urban_areas/slug:%s/images' % location)
     data = json.loads(req.content)
     return data
 
