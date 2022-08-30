@@ -24,13 +24,24 @@ def get_city_score(location):
     data = json.loads(req.content)
     return data
 
-  # def self.get_city_score_data(city)
-  #   response = conn.get("urban_areas/slug:#{city}/scores")
-  #   JSON.parse(response.body, symbolize_names: true)
-  # end
+
+def get_all_urban_areas():
+    req = requests.get('https://api.teleport.org/api/urban_areas/')
+    data = json.loads(req.content)
+    return data
 
 
-# if __name__ == '__main__':
-#     app.run(debug=True)
+def get_city_image_data(location):
+    req = requests.get('https://api.teleport.org/api/urban_areas//slug:%s/images' % location)
+    data = json.loads(req.content)
+    return data
+
+
+def get_city_details(location):
+    # params = {'slug:': location}
+    req = requests.get('https://api.teleport.org/api/urban_areas/slug:%s/details' % location)
+    data = json.loads(req.content)
+    return data
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
