@@ -5,8 +5,14 @@ import json
 app = Flask(__name__)
 
 @app.route('/api/<location>')
-def index(location):
+def city(location):
     data = get_city_data(location)
+    return data
+
+
+@app.route('/api/<location>/scores')
+def scores(location):
+    data = get_city_score(location)
     return data
 
 
