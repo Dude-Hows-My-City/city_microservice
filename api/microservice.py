@@ -41,7 +41,7 @@ def city_details(location):
 
 
 @app.route('/api/<location>/salaries')
-def city_details(location):
+def city_salaries(location):
     data = get_city_salaries(location)
     return data
 
