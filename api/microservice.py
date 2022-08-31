@@ -40,6 +40,12 @@ def city_details(location):
     return data
 
 
+@app.route('/api/<location>/salaries')
+def city_details(location):
+    data = get_city_salaries(location)
+    return data
+
+
 ########## Service Calls ##########
 
 def get_city_data(location):
@@ -72,6 +78,13 @@ def get_city_image_data(location):
 def get_city_details(location):
     # params = {'slug:': location}
     req = requests.get('https://api.teleport.org/api/urban_areas/slug:%s/details' % location)
+    data = json.loads(req.content)
+    return data
+
+
+def get_city_salaries(location):
+    # params = {'slug:': location}
+    req = requests.get('https://api.teleport.org/api/urban_areas/slug:#{city}/salaries' % location)
     data = json.loads(req.content)
     return data
 
