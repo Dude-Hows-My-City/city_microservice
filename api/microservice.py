@@ -84,7 +84,7 @@ def get_city_details(location):
 
 def get_city_salaries(location):
     # params = {'slug:': location}
-    req = requests.get('https://api.teleport.org/api/urban_areas/slug:#{city}/salaries' % location)
+    req = requests.get('https://api.teleport.org/api/urban_areas/slug:%s/salaries' % location)
     data = json.loads(req.content)
     return data
 
