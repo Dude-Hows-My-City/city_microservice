@@ -13,12 +13,12 @@
 
 
 ## About This Project
-**[View the Live Site](http://bone-be.herokuapp.com/)**
+**[View the Live Site](http://dude-hows-my-city.herokuapp.com/)**
 **Dude How's My City?** is a fullstack service-oriented application that provides users with the capability of searching and comparing cities they might be interested in with economic, social, and cultural data.
- 
- This microservice was built in Flask to enable modular API consumption and facilitate a service based architecture. It employs human readable, more relevant consumption routes, greater resistance to application failures, and removes stress from our **Ruby on Rails** application back-end.
-
+  
 ## Key Features
+
+ This microservice was built in Flask to enable modular API consumption and facilitate a service based architecture. It employs human readable, more relevant consumption routes, greater resistance to application failures, and removes stress from our **Ruby on Rails** application back-end.
 
 ## Prerequisites
 
@@ -91,13 +91,13 @@ $ flask run
 
 ## Contributors
 
-[Dude, How's My City? Front-end Repo](https://github.com/Bone-TM/bone_FE)
+[Dude, How's My City? Front-end Repo](https://github.com/Dude-Hows-My-City/dhmc_FE)
 
 - Co-Author: [Brandon Ainsworth](https://github.com/BrandonAinsworth)
 - Co-Author: [Kendall McGree](https://github.com/kendallm360)
 - Co-Author: [Nick Orlov](https://github.com/orlov-n)
 
-[Dude, How's My City? Back-end Repo](https://github.com/Bone-TM/bone_BE)
+[Dude, How's My City? Back-end Repo](https://github.com/Dude-Hows-My-City/dhmc_be_rails)
 
 - Co-Author: [Zachary Prince](https://github.com/z-prince)
 - Co-Author: [Antonio Salmeron](https://github.com/amsalmeron)
