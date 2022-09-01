@@ -1,4 +1,4 @@
-# Dude, How's My City?, City Data Microservice
+# "Dude, How's My City?", City Data Microservice
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -14,7 +14,8 @@
 
 ## About This Project
 **[View the Live Site](http://dude-hows-my-city.herokuapp.com/)**
-**Dude How's My City?** is a fullstack service-oriented application that provides users with the capability of searching and comparing cities they might be interested in with economic, social, and cultural data.
+
+"**Dude How's My City?**" is a fullstack service-oriented application that provides users with the capability of searching and comparing cities they might be interested in with economic, social, and cultural data.
   
 ## Key Features
 
